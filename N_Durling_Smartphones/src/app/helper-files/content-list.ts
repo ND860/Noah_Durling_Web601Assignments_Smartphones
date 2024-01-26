@@ -1,6 +1,6 @@
 import { link } from "fs";
-
-class ContentList{
+import { Content } from "./content-interface";
+ export class ContentList{
     private List: Content[];
     constructor(){
         this.List=[]
