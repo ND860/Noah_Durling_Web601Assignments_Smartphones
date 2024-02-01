@@ -1,2 +1,7 @@
 <app-content-card>
+    <h2>{{ card.title }}</h2>
+    <p>{{ card.description }}</p>
+    <h3>Creator: {{ card.creator }}</h3>
+    <img [src]="card.imgURL" alt="{{ card.title }}">
+    <p>Type: {{ card.type }}</p>
 </app-content-card>

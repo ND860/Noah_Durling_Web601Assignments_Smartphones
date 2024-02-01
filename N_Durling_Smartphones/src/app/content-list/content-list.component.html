@@ -1,7 +1,2 @@
-<app-content-list-item *ngFor="let content of contentList" [content]="content">
-    <h2>{{ content.title }}</h2>
-    <p>{{ content.description }}</p>
-    <h3>Creator: {{ content.creator }}</h3>
-    <img [src]="content.imgURL" alt="{{ content.title }}">
-    <p>Type: {{ content.type }}</p>
-</app-content-list-item>
+<app-content-card *ngFor="let content of contentList" [card]="content">
+</app-content-card>
