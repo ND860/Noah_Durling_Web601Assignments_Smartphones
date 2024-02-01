@@ -8,4 +8,16 @@ import {ContentListComponent} from '../content-list/content-list.component'
   styleUrl: './content-card.component.scss'
 })
 export class ContentCardComponent {
+  constructor(private content: ContentListComponent) {} 
+  listdisplay(i:number){
+    let l = this.content.contentList[i];
+    return '<header>'+ '<p>'+l.id+'</p>'+
+    '<h1>'+l.title+'</h1>'+
+    '</header>'+
+    '<p>'+l.description+'</p>'+
+    '<p>'+l.creator+'</p>'+
+    '<img src ='+l.imgURL+'>'+
+    '<p>'+l.type+'</p>'+
+    '<p>'+l.tags+'</p>'
+}
 }
