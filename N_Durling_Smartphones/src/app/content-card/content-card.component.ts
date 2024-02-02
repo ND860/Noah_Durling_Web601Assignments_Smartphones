@@ -1,6 +1,6 @@
 import { Component,Input } from '@angular/core';
-import {ContentListComponent} from '../content-list/content-list.component'
 import { Content } from '../helper-files/content-interface';
+
 @Component({
   selector: 'app-content-card',
   standalone: true,
@@ -11,5 +11,8 @@ import { Content } from '../helper-files/content-interface';
 export class ContentCardComponent {
   @Input() card: Content;
   constructor() {
+  }
+  onclick(i: number,t: string){
+    console.log(i,t);
   }
 }

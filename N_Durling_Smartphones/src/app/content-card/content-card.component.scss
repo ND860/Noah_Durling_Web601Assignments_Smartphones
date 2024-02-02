@@ -1,3 +1,10 @@
-app-content-card{
-    border: 1px black;
+div:first-of-type{
+    border: 2px solid black;
+}
+div{
+    border: 1px solid black;
+    width: auto;
+}
+img{
+    width: 70%;
 }
