@@ -60,7 +60,6 @@ export class ContentListComponent {
       description: "The newsest Pixel phone",
       creator: "Google",
       imgURL: "https://m.media-amazon.com/images/I/81Mya-dPIOL._AC_UF1000,1000_QL80_.jpg",
-      type: "Pixel"
     },
     {
       id: 6,
@@ -68,7 +67,6 @@ export class ContentListComponent {
       description: "The best Iphone 11",
       creator: "Apple",
       imgURL: "https://m.media-amazon.com/images/I/81x9I9qXbmL._AC_UF894,1000_QL80_.jpg",
-      type: "Iphone"
     }
   ]
   }
