@@ -1,2 +1,4 @@
 <app-content-card *ngFor="let content of contentList" [card]="content">
 </app-content-card>
+<app-content-card *ngFor="let content of contentList | types:'Iphone'" [card]="content">
+</app-content-card>

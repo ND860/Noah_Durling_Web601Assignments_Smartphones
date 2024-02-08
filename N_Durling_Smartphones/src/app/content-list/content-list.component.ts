@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Content } from '../helper-files/content-interface';
 import {ContentCardComponent} from '../content-card/content-card.component'
+import { TypesPipe } from '../types.pipe';
 
 @Component({
   selector: 'app-content-list',
