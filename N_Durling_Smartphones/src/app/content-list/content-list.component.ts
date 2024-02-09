@@ -3,17 +3,21 @@ import { CommonModule } from '@angular/common';
 import { Content } from '../helper-files/content-interface';
 import {ContentCardComponent} from '../content-card/content-card.component'
 import { TypesPipe } from '../types.pipe';
+import { FormsModule } from '@angular/forms';
+import { title } from 'process';
 
 @Component({
   selector: 'app-content-list',
   standalone: true,
-  imports: [CommonModule,ContentCardComponent],
+  imports: [CommonModule,ContentCardComponent,TypesPipe,FormsModule],
   templateUrl: './content-list.component.html',
   styleUrl: './content-list.component.scss'
 })
 
 export class ContentListComponent {
   contentList: Content[];
+  searchfound: string;
+  searchtext: string;
   constructor() {
     this.contentList = [{
       id: 0,
@@ -70,5 +74,16 @@ export class ContentListComponent {
       imgURL: "https://m.media-amazon.com/images/I/81x9I9qXbmL._AC_UF894,1000_QL80_.jpg",
     }
   ]
+  }
+  search(){
+    if (this.searchtext=="") {
+      this.searchfound=""
+    }
+    else if (this.contentList.filter(item => item.title===this.searchtext).length>0) {
+      this.searchfound="true"
+    }
+    else{
+      this.searchfound="false"
+    }
   }
 }
