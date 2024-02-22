@@ -40,7 +40,6 @@ export class ContentListComponent {
       title: "Iphone 15",
       description: "The newsest Iphone",
       creator: "Apple",
-      imgURL: "https://imageio.forbes.com/specials-images/imageserve/641397e79f04500b85460b8f/Apple--iPhone-15--iPhone-15-Pro-Max--iPhone-15-Pro--iPhone-15-Pro-design--iPhone-15/0x0.jpg?format=jpg&crop=961,721,x344,y2,safe&width=960",
       type: "Iphone"
     },
     {
@@ -63,8 +62,7 @@ export class ContentListComponent {
       id: 5,
       title: "google pixel 8",
       description: "The newsest Pixel phone",
-      creator: "Google",
-      imgURL: "https://m.media-amazon.com/images/I/81Mya-dPIOL._AC_UF1000,1000_QL80_.jpg",
+      creator: "Google"
     },
     {
       id: 6,
