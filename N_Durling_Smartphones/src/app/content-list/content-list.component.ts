@@ -25,7 +25,8 @@ export class ContentListComponent {
       description: "An old Iphone",
       creator: "Apple",
       imgURL: "https://cdn.alloallo.media/catalog/product/apple/iphone/iphone-7-plus/iphone-7-plus-rose-gold.jpg",
-      type: "Iphone"
+      type: "Iphone",
+      tags: ["apple","Iphone"]
     },
     {
       id: 1,
@@ -33,14 +34,16 @@ export class ContentListComponent {
       description: "The newsest samsung",
       creator: "Samsung",
       imgURL: "https://media.wired.com/photos/65a8644bf7b7607998696894/master/w_1600%2Cc_limit/galaxy-s24-marblegray-front_HI-SOURCE-Samsung.jpg",
-      type: "Samsung"
+      type: "Samsung",
+      tags: ["samsung"]
     },
     {
       id: 2,
       title: "Iphone 15",
       description: "The newsest Iphone",
       creator: "Apple",
-      type: "Iphone"
+      type: "Iphone",
+      tags: ["apple","Iphone","cool"]
     },
     {
       id: 3,
@@ -48,7 +51,8 @@ export class ContentListComponent {
       description: "a foldable phone",
       creator: "Samsung",
       imgURL: "https://img.global.news.samsung.com/global/wp-content/uploads/2020/02/Press-Thumbnail-1000x563-Galaxy-Z-Flip.jpg",
-      type: "Samsung"
+      type: "Samsung",
+      tags: ["Samsung","Flip"]
     },
     {
       id: 4,
@@ -56,13 +60,15 @@ export class ContentListComponent {
       description: "An google pixel",
       creator: "Google",
       imgURL: "https://i5.walmartimages.com/asr/9484e5ef-3afc-40c9-9584-d6a7caf29af7.4b9b17360892dc216aefd4bf0f39b9f4.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
-      type: "Pixel"
+      type: "Pixel",
+      tags: ["Pixel","Google"]
     },
     {
       id: 5,
       title: "google pixel 8",
       description: "The newsest Pixel phone",
-      creator: "Google"
+      creator: "Google",
+      tags: ["Google","Pixel"]
     },
     {
       id: 6,

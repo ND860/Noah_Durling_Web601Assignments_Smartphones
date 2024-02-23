@@ -2,6 +2,15 @@
     <h2>{{ card.title }}</h2>
     <p>{{ card.description }}</p>
     <h3>Creator: {{ card.creator }}</h3>
-    <img (click)="onclick(card.id,card.title)"[src]="card.imgURL" alt="{{ card.title }}">
-    <p>Type: {{ card.type }}</p>
+    <div *ngIf="card.imgURL">
+        <img (click)="onclick(card.id,card.title)" [src]="card.imgURL" alt="{{ card.title }}">
+    </div>
+    <div *ngIf="!card.imgURL">
+        <img (click)="onclick(card.id,card.title)" src="https://cdn-icons-png.freepik.com/256/0/191.png" alt="{{ card.title }}">
+    </div>
+    <p appHoveraffect type="underline">Type: {{ card.type }}</p>
+    <p>Tags:</p>
+    <ul>
+        <li appHoveraffect type="bold" *ngFor="let tag of card.tags">{{tag}}</li>
+    </ul>
 </div>
