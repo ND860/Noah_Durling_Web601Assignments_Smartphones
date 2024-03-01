@@ -1,3 +1,7 @@
+<app-create-content (insertcontentevent)="insertcontentevent($event)" [error]="errormessage">
+
+</app-create-content>
+
 <input [(ngModel)]="searchtext" placeholder="search a title">
 <button class="search" on-click="search()">search</button>
 <div [ngSwitch]='searchfound'>
