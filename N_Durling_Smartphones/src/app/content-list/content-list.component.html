@@ -7,7 +7,9 @@
 <div [ngSwitch]='searchfound'>
     <span class="true" *ngSwitchCase='"true"'>A title has that name</span>
     <span class="false" *ngSwitchCase='"false"'>A title does not have that name</span>
-    </div>
+</div>
+<app-content-card [single]="true" [card]="singlecontentitem">
+</app-content-card>
 <app-content-card *ngFor="let content of contentList | types: 'Samsung'" [card]="content">
 </app-content-card>
 <app-content-card *ngFor="let content of contentList | types:'Iphone'" [card]="content">

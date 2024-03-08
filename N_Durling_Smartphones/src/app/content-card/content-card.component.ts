@@ -11,6 +11,7 @@ import {HoveraffectDirective} from '../hoveraffect.directive';
 })
 export class ContentCardComponent {
   @Input() card: Content;
+  @Input() single: boolean
   constructor() {
   }
   onclick(i: number,t: string){
