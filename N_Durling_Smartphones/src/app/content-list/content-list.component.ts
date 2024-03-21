@@ -7,10 +7,11 @@ import { FormsModule } from '@angular/forms';
 import { title } from 'process';
 import { CreateContentComponent } from "../create-content/create-content.component";
 import { SmartphoneserviceService } from "../smartphoneservice.service";
+import {ModifyContentComponentComponent} from "../modify-content-component/modify-content-component.component";
 @Component({
   selector: 'app-content-list',
   standalone: true,
-  imports: [CommonModule,ContentCardComponent,TypesPipe,FormsModule,CreateContentComponent],
+  imports: [CommonModule,ContentCardComponent,TypesPipe,FormsModule,CreateContentComponent,ModifyContentComponentComponent],
   templateUrl: './content-list.component.html',
   styleUrl: './content-list.component.scss'
 })
@@ -38,21 +39,10 @@ export class ContentListComponent {
       this.searchfound="false"
     }
   }
-  insertcontentevent(item:Content){
-    let createPromise = new Promise((pass, fail) =>{
-      try {
-        this.contentList.push(item)
-        pass("ok")
-      } catch (error) {
-        fail("no")
-      }
-
-    })
-    createPromise.then(successResult =>{
-      let newarray = this.contentList.slice()
-      this.contentList=newarray
-      this.errormessage=false
-    })
-      .catch(failResult => this.errormessage=true);
+  insertcontentevent(){
+    this.smartphoneserviceService.getContentObs().subscribe(contentDb=>this.contentList=contentDb);
+    let newarray = this.contentList.slice()
+    this.contentList=newarray
+    this.errormessage=false
   }
 }

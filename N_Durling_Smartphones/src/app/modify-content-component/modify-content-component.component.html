@@ -1,1 +1,14 @@
-<p>modify-content-component works!</p>
+<h1>Modify Content</h1>
+    <label for="title">Title:</label>
+    <input [(ngModel)]="title"><br>
+    <label for="description">Description:</label>
+    <input [(ngModel)]="description"><br>
+    <label for="creator">Creator:</label>
+    <input [(ngModel)]="creator"><br>
+    <label for="imgURL">Image URL:</label>
+    <input [(ngModel)]="imgURL"><br>
+    <label for="type">Type:</label>
+    <input [(ngModel)]="type"><br>
+    <label for="tags">Tags: seperate by ,</label>
+    <input [(ngModel)]="tags"><br>
+    <button (click)="addcontentitem()">Add content</button>

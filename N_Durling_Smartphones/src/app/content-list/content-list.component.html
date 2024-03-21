@@ -1,6 +1,6 @@
-<app-create-content (insertcontentevent)="insertcontentevent($event)" [error]="errormessage">
+<app-modify-content-component (insertcontentevent)="insertcontentevent()">
 
-</app-create-content>
+</app-modify-content-component>
 
 <input [(ngModel)]="searchtext" placeholder="search a title">
 <button class="search" on-click="search()">search</button>
